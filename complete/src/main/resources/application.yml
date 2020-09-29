@@ -1,0 +1,11 @@
+server:
+  port: 8081
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://hugobarbatto.com.br:3306/spring_learnday
+    username: springuser
+    password: springpass

@@ -1,7 +1,8 @@
-package com.example.restservice;
+package com.example.restservice.Controller;
 
 import java.util.concurrent.atomic.AtomicLong;
 
+import com.example.restservice.Model.Greeting;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class GreetingController {
 
-	private static final String template = "Hello, %s!";
+	private static final String template = "Hello, Sr %s!";
 	private final AtomicLong counter = new AtomicLong();
 
 	@GetMapping("/greeting")
